@@ -11,8 +11,8 @@ __pycache__/
 *.pyd
 
 # Data files
-*.csv
-*.json
-*.xlsx
-*.db
+# *.csv
+# *.json
+# *.xlsx
+# *.db
 
