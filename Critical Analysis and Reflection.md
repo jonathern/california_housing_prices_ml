@@ -6,4 +6,5 @@ Lasso Regression is very easy to interprete  beacause it is  a linear model.It g
 SVM is abit hard to interprete since it focuses more on the gap between the data points than the variables themselves
 Computation
 Lasso is very fast and lightweight because it uses optimisation techniques to converge ver quickly even with like a thousand features while SVM is slower beacuse it calcultes distances between data points whichmeans the bigger the dataset grows the slow the model becomes.
-In terms of prediction, Lasso  Regression requires lmost zero memory because once trained , making a prediction is a simple math equation where as SVM uses alot of RAM since the computer has to keep Spport Vctors in its memory
+In terms of prediction, Lasso  Regression requires lmost zero memory because once trained , making a prediction is a simple math equation where as SVM uses alot of RAM since the computer has to keep Spport Vctors in its memory.
+In conclusion Lasso Rgression is more interpretable and computatopnally effiecient which makes it a suitable choice for scenarios where the stakeholders need to understand the model nd how it actually reasons.SVM is best suitable for classification tasks where the relationship between features and classes is abit complex and non linear. 
