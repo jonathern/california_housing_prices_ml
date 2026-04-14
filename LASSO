@@ -1,0 +1,13 @@
+## Milestone 3: Regression Using Lasso
+### 3A. Training the Lasso Regression Model  
+Lasso Regression (Least Absolute Shrinkage and Selection Operator) extends ordinary linear regression by adding an L1 regularization penalty to the loss function. This penalty discourages large coefficients and forces coefficients of weak or redundant features to shrink to exactly zero, effectively performing automatic feature selection during training.
+
+The strength of regularization is controlled by the alpha (λ) parameter:
+
+A high alpha applies a stronger penalty, more features are eliminated, the model is simpler but may underfit
+A low alpha applies a weaker penalty, more features are retained, the model is more complex but may overfit
+Rather than manually guessing alpha, LassoCV  automatically tests multiple alpha values using 5-fold cross-validation and selects the one that produces the best generalisation performance.
+lasso = LassoCV(cv=5, random_state=42, max_iter=10000)
+lasso.fit(X_train, y_train)
+
+print("Optimal alpha (λ) selected by cross-validation:", round(lasso.alpha_, 4))
